@@ -1,0 +1,404 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#bdf37d",
+                        "surface-container": "#eeeeee",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#f3bb8e",
+                        "on-primary-fixed": "#1a1c1e",
+                        "on-tertiary-container": "#a97a52",
+                        "inverse-surface": "#2f3131",
+                        "on-secondary-container": "#447002",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffdcc2",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#1a1c1e",
+                        "outline-variant": "#c5c6ca",
+                        "secondary-fixed": "#bdf37d",
+                        "tertiary-container": "#2e1500",
+                        "surface-container-low": "#f3f3f4",
+                        "background": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "surface": "#ffffff",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#1a1c1e",
+                        "on-tertiary-fixed-variant": "#643e1b",
+                        "on-background": "#1a1c1c",
+                        "on-tertiary-fixed": "#2e1500",
+                        "on-surface-variant": "#44474a",
+                        "on-primary-fixed-variant": "#454749",
+                        "primary-fixed-dim": "#c6c6c9",
+                        "secondary": "#3f6900",
+                        "tertiary": "#2e1500",
+                        "secondary-fixed-dim": "#a2d664",
+                        "surface-dim": "#dadada",
+                        "on-secondary-fixed": "#102000",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#75777a",
+                        "inverse-primary": "#c6c6c9",
+                        "on-surface": "#1a1c1c",
+                        "on-primary-container": "#838486",
+                        "surface-tint": "#5d5e61",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#2f4f00",
+                        "primary-fixed": "#e2e2e5",
+                        "surface-container-high": "#e8e8e8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "margin-desktop": "64px",
+                        "sm": "12px",
+                        "xl": "80px",
+                        "margin-mobile": "16px",
+                        "stack-sm": "12px",
+                        "stack-lg": "48px",
+                        "stack-md": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-md": ["Work Sans"],
+                        "headline-sm": ["Libre Caslon Text"],
+                        "label-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg-mobile": ["Libre Caslon Text"],
+                        "headline-xl": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "label-sm": ["Work Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    }catch(_e){}</script></head><body class="bg-surface text-on-surface font-body-md selection:bg-secondary/20">
+
+<!-- TopNavBar (Aligned with SCREEN_3) -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/10 transition-all duration-300">
+    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto">
+        <a class="flex items-center gap-3" href="index.html#home">
+            <img alt="Malnad Kitchen Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiaN6HXdoAzRHVTixRCie4zDKQI6UnUQWlkhpIi5Iz5Yow3M2oItK8lBbHBkjlQMJnRQfv42-rPUojNyj7hvIgBpvagTqgq_nIlxGTN09PQTSvuI_ssaBF-D3SDnnSeyijC2m_DORjgww1-oMguJf5vL4gmxmVZQJthvA1idHHMzPnZ1AQvBxYeJRKUoO4iTjjgxa-YddK-UG6d9f49U6XyvAI65IKc_IZ0aQv1iE2VM5eCgxKNwd-TEMWFNCig2kmC-s7p0Ufu7s">
+            <span class="font-display-lg text-headline-md font-bold text-primary tracking-tight">MALNAD KITCHEN</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+            <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="index.html#home">Home</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="index.html#about">About</a>
+            <a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-body-md text-body-md" href="index.html#catering">Catering</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="index.html#products">Products</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="index.html#gallery">Gallery</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="index.html#contact">Contact</a>
+        </nav>
+        <a class="bg-primary text-on-primary px-6 py-2 rounded-xl font-label-md text-label-md hover:scale-95 transition-transform duration-150 shadow-lg shadow-primary/10" href="tel:+919036426630">
+            Inquire Now
+        </a>
+    </div>
+</header>
+
+<main class="pt-20">
+    <!-- Hero Section (Split Layout as per Request-->
+    <section class="relative min-h-[70vh] flex items-center bg-white overflow-hidden">
+        <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center px-margin-mobile md:px-margin-desktop py-stack-lg">
+            <div class="space-y-stack-md z-10">
+                <span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-label-sm uppercase tracking-widest">Heritage Dining</span>
+                <h1 class="font-headline-xl text-headline-xl text-primary leading-tight">Our Curated Catering Menus</h1>
+                <p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg leading-relaxed">
+                    At Malnad Kitchen, we don't just serve food; we craft experiences. From intimate gatherings to grand celebrations, we translate the rustic, organic soul of Malnad cuisine into elegant table arrangements.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md flex items-center gap-2 hover:bg-primary-container transition-all shadow-xl shadow-primary/20">
+                        <span class="material-symbols-outlined" data-original-icon="description">description</span>
+                        Download PDF Menu
+                    </button>
+                    <a class="bg-white border border-secondary text-secondary px-8 py-4 rounded-xl font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container-low transition-all" href="tel:+919036426630">
+                        <span class="material-symbols-outlined" data-original-icon="event_available">event_available</span>
+                        Check Availability
+                    </a>
+                </div>
+            </div>
+            <div class="relative h-[400px] md:h-[600px] rounded-[40px] overflow-hidden shadow-2xl border border-outline-variant/20">
+                <img alt="Traditional Malnad Feast" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAac0f7z38m_dLHZOBXKCDoToCog0c8WL-WgXqIyWpBp_Ktyt2uf8BcEt7E_qRlBxdRFN6jQpNBaTPP5FQiiH1frzVgTRuPFtgWFHfFGjFTnaxGXhQZxPKETPlqWxF7_BmOijDSXW0tU3F6eg0YTOPamQi9mEV_QmbDh6aYRNAVzIi3sgSQ_-A8G_jSV_QuZXoFqQye_5aYhIafOdri2Vbvm7yqXetZFRJspm6gU2IDvnKQsx812mHPFNlxVALKfdUdotzRqBb98V0">
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Category Tabs (Heritage Hearth Styling) -->
+    <section class="bg-surface-container-low border-y border-outline-variant/10">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop overflow-x-auto no-scrollbar">
+            <div class="flex gap-12 py-6 min-w-max justify-center">
+                <button class="font-label-md text-label-md uppercase tracking-widest text-primary border-b-2 border-primary pb-2 transition-all" id="tab-wedding" onclick="switchMenu('wedding')">Wedding</button>
+                <button class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary pb-2 transition-all" id="tab-anniversary" onclick="switchMenu('anniversary')">Anniversary</button>
+                <button class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary pb-2 transition-all" id="tab-birthday" onclick="switchMenu('birthday')">Birthday</button>
+                <button class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary pb-2 transition-all" id="tab-farewell" onclick="switchMenu('farewell')">Farewell</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <div id="menu-container">
+        <!-- 1. Starters & Appetizers (Card Style from homepage Specializations) -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-white">
+            <div class="max-w-container-max mx-auto">
+                <div class="flex items-center gap-4 mb-12">
+                    <h2 class="font-headline-lg text-headline-lg text-primary">Starters &amp; Appetizers</h2>
+                    <div class="h-[1px] flex-grow bg-secondary/20"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                    <div class="group bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all">
+                        <div class="flex items-center gap-6 mb-4">
+                            <div class="w-16 h-16 rounded-2xl bg-secondary/5 flex items-center justify-center text-secondary">
+                                <span class="material-symbols-outlined text-4xl">local_bar</span>
+                            </div>
+                            <h3 class="font-headline-sm text-headline-sm text-primary">Signature Kokum Cooler</h3>
+                        </div>
+                        <p class="text-on-surface-variant">A refreshing infusion of wild mangosteen, roasted cumin, and black salt. Served chilled in copper tumblers.</p>
+                    </div>
+                    <div class="group bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all">
+                        <div class="flex items-center gap-6 mb-4">
+                            <div class="w-16 h-16 rounded-2xl bg-secondary/5 flex items-center justify-center text-secondary">
+                                <span class="material-symbols-outlined text-4xl">restaurant</span>
+                            </div>
+                            <h3 class="font-headline-sm text-headline-sm text-primary">Ghee-Roast Paneer Morsels</h3>
+                        </div>
+                        <p class="text-on-surface-variant">Cubes of artisanal farmer's cheese slow-cooked in aged Kundapura ghee and Byadagi chillies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Traditional Main Course (Image Card Style from homepage Catering section) -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+            <div class="max-w-container-max mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Traditional Main Course</h2>
+                    <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+                </div>
+                <div class="flex overflow-x-auto no-scrollbar gap-12 pb-6">
+<div class="group bg-surface-container-lowest rounded-[40px] overflow-hidden border border-outline-variant/10 shadow-sm hover:shadow-2xl transition-all duration-500 min-w-[300px] md:min-w-[450px] shrink-0">
+<div class="h-80 overflow-hidden">
+<img alt="Kadubu &amp; Chicken Pulimunchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu3FL93Cau2BWdtNSbDilzyfCD36IT9xmd3GaGFtWe4WEHIttOXrn7SZB9yH752bY_o4w1MvV8f2cYC2qfo6zZJF4nJ8Fdd0juLY18DGafUScRoJiWINvlALkD1NaZ0joimw6vqyYdLc0yoeom3Epwh7Nb9RH_oYDqxqmACyDvzc4zAPIF13UjchHRAibDIu_WKnsvJPk-APNviMg96r9PpNvulIuN-pbzy23Dgq4yzbkmQNSDVyFYlSdyt_v7CbtgZnlq4trGPKg">
+</div>
+<div class="p-10">
+<h3 class="font-headline-md text-headline-md text-secondary mb-4">Kadubu &amp; Chicken Pulimunchi</h3>
+<p class="text-on-surface-variant leading-relaxed">Steam-cooked rice dumplings served with a tangy, spicy tamarind-based chicken curry.</p>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-[40px] overflow-hidden border border-outline-variant/10 shadow-sm hover:shadow-2xl transition-all duration-500 min-w-[300px] md:min-w-[450px] shrink-0">
+<div class="h-80 overflow-hidden">
+<img alt="Bisi Bele Bath" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUrK4_HofRNJYxgvKwbfEALJMtMexoYEAd76Uu4ichyXztwqNM1eLkSY5lx9vYjoLbs4auVQU_QMuuiKZqIseWU5yYDVjEtoa7oAPcZPPKt0WCs3tT5Q4ZPfMMvEX3XFdk4XN9KkGAdNQ-x3-d5YTbV2br38kuil7h2p-pZ_Vam2SxZj_DBuW8iNostkUwBHVYATRmKHk4aSoTNhShfPfklrxKmNZErcX_vf2BcpQQ8tUXytub8QuuPL5t5LykcD5dHDCGWXLfbuE">
+</div>
+<div class="p-10">
+<h3 class="font-headline-md text-headline-md text-secondary mb-4">Bisi Bele Bath (Heritage Style)</h3>
+<p class="text-on-surface-variant leading-relaxed">A complex medley of rice, lentils, and garden vegetables, enriched with a proprietary hand-ground spice blend.</p>
+</div>
+</div>
+</div>
+            </div>
+        </section>
+
+        <!-- 3. Breads & Accompaniments -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-white">
+            <div class="max-w-container-max mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div class="max-w-xl">
+                        <h2 class="font-headline-lg text-headline-lg text-primary">Breads &amp; Accompaniments</h2>
+                        <p class="text-on-surface-variant mt-2">Essential companions to every Malnad meal.</p>
+                    </div>
+                    <div class="w-24 h-1 bg-secondary hidden md:block"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                    <div class="flex items-start gap-6 p-8 rounded-3xl bg-surface-container-low border border-outline-variant/10">
+                        <span class="material-symbols-outlined text-secondary text-4xl">bakery_dining</span>
+                        <div>
+                            <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Akki Roti</h3>
+                            <p class="text-on-surface-variant">Traditional rice flour flatbreads seasoned with dill, onions, and green chillies.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6 p-8 rounded-3xl bg-surface-container-low border border-outline-variant/10">
+                        <span class="material-symbols-outlined text-secondary text-4xl">skillet</span>
+                        <div>
+                            <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Neer Dosa</h3>
+                            <p class="text-on-surface-variant">Lacy, paper-thin rice crepes that melt in your mouth, served with fresh coconut chutney.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Desserts & Sweets (Premium Highlight Section Style) -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-primary text-on-primary relative overflow-hidden">
+            <div class="absolute inset-0 opacity-5 pointer-events-none">
+                <div class="absolute -top-24 -left-24 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+            </div>
+            <div class="max-w-container-max mx-auto relative z-10 text-center">
+                <span class="material-symbols-outlined text-secondary-container text-5xl mb-6" data-original-icon="ice_cream">circle</span>
+                <h2 class="font-display-lg text-headline-xl mb-12">Desserts &amp; Sweets</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                    <div class="bg-white/10 backdrop-blur-md p-10 rounded-[32px] border border-white/20 text-left">
+                        <h4 class="text-secondary-container font-label-md uppercase tracking-widest mb-4">The Golden Duo</h4>
+                        <h3 class="font-headline-sm text-headline-sm mb-4">Dharwad Pedha &amp; Mysore Pak</h3>
+                        <p class="opacity-80">Caramelized milk solids and melt-in-mouth gram flour fudge prepared using legacy methods.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md p-10 rounded-[32px] border border-white/20 text-left">
+                        <h4 class="text-secondary-container font-label-md uppercase tracking-widest mb-4">Artisanal Choice</h4>
+                        <h3 class="font-headline-sm text-headline-sm mb-4">Jaggery &amp; Coconut Payasam</h3>
+                        <p class="opacity-80">A warm, comforting pudding made with organic palm jaggery and thick coconut milk.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Others & Beverages -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-white">
+            <div class="max-w-container-max mx-auto grid md:grid-cols-3 gap-16 items-center">
+                <div class="col-span-1">
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Finishing Touches</h2>
+                    <p class="text-on-surface-variant text-body-lg">Every great feast deserves the perfect accompaniment and a classic closing brew.</p>
+                    <div class="mt-8">
+                         <img alt="Filter Coffee" class="w-full aspect-square object-cover rounded-3xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeYCl4wzdeXMZFb1spxyYljz_cB8i2OgZzpVxLK0B5Acgn4Y582sUGrApr3F1tzwg8dDqYqYflaUbYl-hCzQdco9hfKlu7nhN6nul6IkdpB4Kl9UK_ETZGsC2XdLV4b6FVo3lSYVTg7RIGvoApwCrO0AFCO4OhIvFIwh00KpJa_ClEeMu3mLWqm8pH2-R7czq_fr3AGQUhqWNtvW5iG_6NlBoBa5-YdKMgJ4lfQK1xNOU8rr_S9s5uMt9pOkeSavwFUlh3Y8uhIMk">
+                    </div>
+                </div>
+                <div class="col-span-2 space-y-gutter">
+                    <div class="group p-8 rounded-3xl border border-outline-variant/10 hover:bg-surface-container-low transition-all">
+                        <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Banana Podi Crisps</h3>
+                        <p class="text-on-surface-variant">Twice-fried raw plantain tossed in a secret blend of twelve spices.</p>
+                    </div>
+                    <div class="group p-8 rounded-3xl border border-outline-variant/10 hover:bg-surface-container-low transition-all">
+                        <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Filter Coffee</h3>
+                        <p class="text-on-surface-variant">Strong, aromatic Chikmagalur coffee brewed with chicory and frothy milk.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CTA Section (Aligned with homepage style) -->
+    <section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+        <div class="max-w-container-max mx-auto bg-primary text-on-primary rounded-[40px] p-12 md:p-20 overflow-hidden relative">
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+                <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+            </div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="max-w-2xl text-center md:text-left">
+                    <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Need a Truly Unique Menu?</h2>
+                    <p class="text-body-lg opacity-80">Our culinary team works directly with you to design bespoke menus that reflect your personal journey while staying true to the Malnad spirit.</p>
+                </div>
+                <div class="flex flex-wrap gap-4 shrink-0">
+                    <a class="bg-secondary text-on-secondary px-10 py-5 rounded-xl font-bold uppercase tracking-widest hover:brightness-110 transition-all" href="tel:+919036426630">Start Customizing</a>
+                    <button class="bg-white/10 border border-white/20 text-white px-10 py-5 rounded-xl font-bold uppercase tracking-widest hover:bg-white/20 transition-all">View FAQ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer (Aligned with SCREEN_3) -->
+<footer class="w-full py-xl px-margin-desktop bg-surface-container-lowest border-t border-outline-variant/10">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-lg max-w-7xl mx-auto">
+        <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-3 mb-6">
+                <img alt="Malnad Kitchen Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiaN6HXdoAzRHVTixRCie4zDKQI6UnUQWlkhpIi5Iz5Yow3M2oItK8lBbHBkjlQMJnRQfv42-rPUojNyj7hvIgBpvagTqgq_nIlxGTN09PQTSvuI_ssaBF-D3SDnnSeyijC2m_DORjgww1-oMguJf5vL4gmxmVZQJthvA1idHHMzPnZ1AQvBxYeJRKUoO4iTjjgxa-YddK-UG6d9f49U6XyvAI65IKc_IZ0aQv1iE2VM5eCgxKNwd-TEMWFNCig2kmC-s7p0Ufu7s">
+                <span class="font-display-lg text-headline-md font-bold text-primary tracking-tight">MALNAD KITCHEN</span>
+            </div>
+            <p class="text-on-surface-variant font-body-md text-body-md mb-6">Preserving heritage through flavors that stay in your heart forever.</p>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+                <a class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+                <a class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">favorite</span></a>
+            </div>
+        </div>
+        <div class="">
+            <h4 class="font-bold text-primary font-body-md text-body-md mb-6">Quick Links</h4>
+            <ul class="space-y-4 font-body-md text-body-md">
+                <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">About Our Recipes</a></li>
+                <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Catering Menu</a></li>
+                <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Product Catalog</a></li>
+                <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Delivery Info</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold text-primary font-body-md text-body-md mb-6">Customer Support</h4>
+            <ul class="space-y-4 font-body-md text-body-md">
+                <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors underline" href="#">Privacy Policy</a></li>
+                <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors underline" href="#">Terms of Service</a></li>
+                <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors underline" href="#">Catering FAQ</a></li>
+                <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors underline" href="#">Allergens</a></li>
+            </ul>
+        </div>
+        <div class="">
+            <h4 class="font-bold text-primary font-body-md text-body-md mb-6">Newsletter</h4>
+            <p class="text-on-surface-variant font-body-md text-body-md mb-4">Get updates on seasonal items.</p>
+            <div class="flex">
+                <input class="w-full bg-white border border-outline-variant rounded-l-xl p-3 focus:ring-0 text-on-surface" placeholder="Email" type="email">
+                <button class="bg-primary text-on-primary px-4 rounded-r-xl hover:bg-primary-container transition-all"><span class="material-symbols-outlined">send</span></button>
+            </div>
+        </div>
+        <div class="col-span-1 md:col-span-4 pt-12 border-t border-outline-variant/10 text-center">
+            <p class="text-on-surface-variant font-body-md text-body-md">© 2024 Malnad Kitchen. Authentic Taste. Homely Quality.</p>
+        </div>
+    </div>
+</footer>
+
+<script class="">
+    function switchMenu(menuId) {
+        const tabs = ['wedding', 'anniversary', 'birthday', 'farewell'];
+        tabs.forEach(tab => {
+            const el = document.getElementById(`tab-${tab}`);
+            if (tab === menuId) {
+                el.classList.add('text-primary', 'border-b-2', 'border-primary');
+                el.classList.remove('text-on-surface-variant');
+            } else {
+                el.classList.remove('text-primary', 'border-b-2', 'border-primary');
+                el.classList.add('text-on-surface-variant');
+            }
+        });
+
+        const container = document.getElementById('menu-container');
+        container.style.opacity = '0';
+        container.style.transform = 'translateY(10px)';
+        
+        setTimeout(() => {
+            container.style.transition = 'all 0.4s ease';
+            container.style.opacity = '1';
+            container.style.transform = 'translateY(0)';
+        }, 50);
+    }
+
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('shadow-md');
+        } else {
+            header.classList.remove('shadow-md');
+        }
+    });
+</script></body></html>
