@@ -1,678 +1,807 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malnad Kitchen | Two Decades of Trusted Catering Excellence</title>
+  <meta name="description" content="Malnad Kitchen, Shivamogga offers trusted vegetarian event catering, industrial catering, authentic Malnad masala powders and instant mixes. No artificial colours, MSG or baking soda.">
+  <meta name="keywords" content="Malnad Kitchen, Shivamogga catering, vegetarian catering, industrial catering, Malnad cuisine, masala powders, instant mixes">
+  <meta property="og:title" content="Malnad Kitchen | Trusted Catering Excellence">
+  <meta property="og:description" content="Premium vegetarian catering, masala powders and instant mixes from Shivamogga since 2005.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuBqBtp6Mt614jDzxfpcwxNoldpvfsptxPTCuYbC9CDB2eJxEclO9PFJPud0C-rEOiBLqBhFkI7BePLNQIEP3j8VE6a-49gPbp96N5N_nvtKrq1A9VR5PqDHY3VpYtcEmRtlzRV2HN-3zDvnUrH8SQyePtROqE37b1XTzElFbjL5xxvrE7ssLub-mmX4P68p1gwRJeQmrCiIcO4d1qykMMsJ2_kUONGkYstMe6UHgtHfyXWmbwdzZT_Rr8LNMFEpX9OfdlgKborRSnQ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@500;600;700&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300..700,0..1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #2E7D32;
+      --forest-dark: #1d4f21;
+      --brown: #5D4037;
+      --gold: #C9A227;
+      --cream: #fffaf0;
+      --ink: #201b17;
+      --muted: #695f59;
+      --line: rgba(93, 64, 55, 0.16);
+      --shadow: 0 24px 70px rgba(32, 27, 23, 0.14);
+    }
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>MALNAD KITCHEN | Authentic Traditional Catering</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "secondary-container": "#bdf37d",
-                    "surface-container": "#eeeeee",
-                    "on-error": "#ffffff",
-                    "tertiary-fixed-dim": "#f3bb8e",
-                    "on-primary-fixed": "#1a1c1e",
-                    "on-tertiary-container": "#a97a52",
-                    "inverse-surface": "#2f3131",
-                    "on-secondary-container": "#447002",
-                    "on-primary": "#ffffff",
-                    "inverse-on-surface": "#f0f1f1",
-                    "on-error-container": "#93000a",
-                    "tertiary-fixed": "#ffdcc2",
-                    "error": "#ba1a1a",
-                    "surface-bright": "#f9f9f9",
-                    "on-secondary": "#ffffff",
-                    "primary-container": "#1a1c1e",
-                    "outline-variant": "#c5c6ca",
-                    "secondary-fixed": "#bdf37d",
-                    "tertiary-container": "#2e1500",
-                    "surface-container-low": "#f3f3f4",
-                    "background": "#ffffff",
-                    "surface-variant": "#e2e2e2",
-                    "surface": "#ffffff",
-                    "surface-container-highest": "#e2e2e2",
-                    "on-tertiary": "#ffffff",
-                    "primary": "#1a1c1e",
-                    "on-tertiary-fixed-variant": "#643e1b",
-                    "on-background": "#1a1c1c",
-                    "on-tertiary-fixed": "#2e1500",
-                    "on-surface-variant": "#44474a",
-                    "on-primary-fixed-variant": "#454749",
-                    "primary-fixed-dim": "#c6c6c9",
-                    "secondary": "#3f6900",
-                    "tertiary": "#2e1500",
-                    "secondary-fixed-dim": "#a2d664",
-                    "surface-dim": "#dadada",
-                    "on-secondary-fixed": "#102000",
-                    "surface-container-lowest": "#ffffff",
-                    "outline": "#75777a",
-                    "inverse-primary": "#c6c6c9",
-                    "on-surface": "#1a1c1c",
-                    "on-primary-container": "#838486",
-                    "surface-tint": "#5d5e61",
-                    "error-container": "#ffdad6",
-                    "on-secondary-fixed-variant": "#2f4f00",
-                    "primary-fixed": "#e2e2e5",
-                    "surface-container-high": "#e8e8e8"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "gutter": "24px",
-                    "lg": "48px",
-                    "base": "8px",
-                    "xs": "4px",
-                    "md": "24px",
-                    "margin-desktop": "64px",
-                    "sm": "12px",
-                    "xl": "80px",
-                    "margin-mobile": "16px",
-                    "stack-sm": "12px",
-                    "stack-lg": "48px",
-                    "stack-md": "24px",
-                    "container-max": "1280px"
-            },
-            "fontFamily": {
-                    "display-lg": ["Libre Caslon Text"],
-                    "body-md": ["Work Sans"],
-                    "headline-sm": ["Libre Caslon Text"],
-                    "label-md": ["Work Sans"],
-                    "body-lg": ["Work Sans"],
-                    "headline-md": ["Libre Caslon Text"],
-                    "display-lg-mobile": ["Libre Caslon Text"],
-                    "headline-xl": ["Libre Caslon Text"],
-                    "headline-lg": ["Libre Caslon Text"],
-                    "label-sm": ["Work Sans"]
-            },
-            "fontSize": {
-                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
-                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
-                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
-                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
-            }
-          },
-        },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(10deg); }
-        }
-        .animate-float { animation: float 6s ease-in-out infinite; }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    </style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #fff;
+      font-family: "Poppins", Arial, sans-serif;
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+    }
+    img, video, iframe { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .material-symbols-outlined { vertical-align: middle; }
+
+    .container {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      line-height: 1.05;
+      margin: 0;
+      color: var(--ink);
+    }
+    h1 { font-size: clamp(3rem, 8vw, 6.8rem); color: #fff; }
+    h2 {
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      font-weight: 700;
+    }
+    h3 {
+      font-size: clamp(1.75rem, 3.6vw, 2.8rem);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    p { margin: 0; }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 50;
+      transition: background 220ms ease, box-shadow 220ms ease, padding 220ms ease;
+      color: #fff;
+    }
+    .site-header.scrolled {
+      background: rgba(255, 255, 255, 0.94);
+      color: var(--ink);
+      box-shadow: 0 10px 30px rgba(32, 27, 23, 0.08);
+      backdrop-filter: blur(16px);
+    }
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.92);
+      overflow: hidden;
+      padding: 2px;
+    }
+    .brand-mark img {
+      width: 128%;
+      height: 128%;
+      object-fit: contain;
+    }
+    .site-header.scrolled .brand-mark { border-color: var(--line); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+    .nav-links a { opacity: 0.86; }
+    .nav-links a:hover { opacity: 1; color: var(--gold); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--forest); color: #fff; }
+    .btn-primary:hover { background: var(--forest-dark); }
+    .btn-gold { background: var(--gold); color: #21170a; }
+    .btn-outline { border-color: rgba(255, 255, 255, 0.55); color: #fff; background: rgba(255, 255, 255, 0.08); }
+    .btn-light { background: #fff; color: var(--forest-dark); border-color: var(--line); }
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      isolation: isolate;
+      background: var(--brown);
+    }
+    .hero-media, .hero-media video, .hero-fallback, .hero-overlay { position: absolute; inset: 0; }
+    .hero-media { z-index: -3; }
+    .hero-media video, .hero-fallback {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-fallback {
+      background:
+        linear-gradient(120deg, rgba(46, 125, 50, 0.55), rgba(93, 64, 55, 0.65)),
+        url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqBtp6Mt614jDzxfpcwxNoldpvfsptxPTCuYbC9CDB2eJxEclO9PFJPud0C-rEOiBLqBhFkI7BePLNQIEP3j8VE6a-49gPbp96N5N_nvtKrq1A9VR5PqDHY3VpYtcEmRtlzRV2HN-3zDvnUrH8SQyePtROqE37b1XTzElFbjL5xxvrE7ssLub-mmX4P68p1gwRJeQmrCiIcO4d1qykMMsJ2_kUONGkYstMe6UHgtHfyXWmbwdzZT_Rr8LNMFEpX9OfdlgKborRSnQ") center / cover;
+    }
+    .hero-overlay { z-index: -1; background: rgba(0, 0, 0, 0.4); }
+    .hero-content {
+      width: min(980px, calc(100% - 32px));
+      padding: 110px 0 64px;
+      text-align: center;
+      color: #fff;
+    }
+    .hero-content p {
+      max-width: 780px;
+      margin: 20px auto 0;
+      font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .kannada {
+      margin-top: 16px;
+      color: #ffe9a6;
+      font-family: "Noto Sans Kannada", "Poppins", Arial, sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+    .trusted {
+      margin-top: 26px;
+      color: rgba(255, 255, 255, 0.92);
+      font-weight: 600;
+    }
+    .stars { color: var(--gold); letter-spacing: 0.12em; }
+
+    section { padding: 86px 0; }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+      gap: 40px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+    .section-head p { color: var(--muted); font-size: 1.05rem; }
+
+    .about-grid, .contact-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .about-copy { display: grid; gap: 18px; color: var(--muted); }
+    .about-card {
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+      box-shadow: var(--shadow);
+    }
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .counter {
+      padding: 18px;
+      border-radius: 6px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+    .counter strong {
+      display: block;
+      font-size: 2rem;
+      color: var(--forest);
+      font-family: "Playfair Display", Georgia, serif;
+      line-height: 1;
+    }
+    .counter span { color: var(--muted); font-size: 0.86rem; font-weight: 600; }
+    .image-stack {
+      min-height: 520px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: transparent;
+      box-shadow: var(--shadow);
+    }
+    .image-stack img {
+      width: 100%;
+      height: 100%;
+      min-height: 520px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .band { background: var(--cream); }
+    .service-grid, .why-grid, .gallery-grid, .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .service-card, .why-item, .testimonial, .product-panel {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 8px;
+      padding: 26px;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+    .service-card:hover, .why-item:hover, .testimonial:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--forest);
+      margin-bottom: 18px;
+    }
+    .service-card h3, .why-item h3 {
+      font-size: clamp(1.35rem, 2vw, 1.65rem);
+      margin: 4px 0 12px;
+    }
+    .service-card p, .why-item p, .testimonial p { color: var(--muted); }
+
+    .promise {
+      background: var(--forest-dark);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .promise h3 { color: #fff; }
+    .promise p { color: rgba(255, 255, 255, 0.84); }
+    .promise-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 32px;
+    }
+    .promise-list div {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      font-weight: 700;
+    }
+    .promise-list svg {
+      width: 30px;
+      height: 30px;
+      flex: 0 0 30px;
+      color: var(--gold);
+      stroke-width: 2.2;
+    }
+
+    .product-feature {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .product-photo {
+      min-height: 430px;
+      border-radius: 8px;
+      background: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDa3N2J4RA2i1_CmmF0bJiN9YpN0b7pGNgt0G5KvUPRUsnGCXiSEs7tEOyEVuP4dOMZ1T_EZSEbchoUIiU4nl-8sIPwFmBdB0RXWdS7xwgilISzaMFDhPXJiyUTKMLpL7PYzjhrC2BY15yJFQgznpc0Kv6rkTpPrtHXWboh_5-0oDrhgX09sYK0X8PNxspBxDmY4EoxjnP_kACeQNYWuyQVtpi0PM9snqpgNqgImoEjx8v2i13ihbPU9VpmepwwoPliTA_SbTmVQp4") center / cover;
+      box-shadow: var(--shadow);
+    }
+    .product-panel {
+      padding: clamp(34px, 5vw, 52px);
+    }
+    .product-panel h3 {
+      font-size: clamp(2.15rem, 4.2vw, 3.15rem);
+      margin: 12px 0 16px;
+      max-width: 780px;
+    }
+    .product-panel p {
+      margin-bottom: 12px;
+    }
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 32px 0;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 9px 14px;
+      background: #fff;
+      color: var(--brown);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+    .gallery-item {
+      min-height: 240px;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: end;
+      padding: 20px;
+      color: #fff;
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.48);
+      font-weight: 800;
+    }
+
+    .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+    .testimonial .stars { display: block; margin-bottom: 14px; }
+    .testimonial strong { display: block; margin-top: 18px; color: var(--forest-dark); }
+
+    .contact-grid {
+      align-items: start;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .contact-card, .map-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+      padding: 30px;
+    }
+    .contact-card {
+      min-height: 100%;
+    }
+    .map-card {
+      padding: 18px;
+    }
+    .contact-card h3, .map-card h3 {
+      font-size: clamp(1.35rem, 2vw, 1.65rem);
+      margin: 0 0 14px;
+    }
+    .contact-list {
+      display: grid;
+      gap: 18px;
+      margin-top: 26px;
+    }
+    .contact-list a, .contact-list div {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      color: var(--muted);
+    }
+    .contact-list strong { color: var(--ink); display: block; }
+    .map {
+      width: 100%;
+      height: 390px;
+      border: 0;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    footer {
+      padding: 58px 0 34px;
+      background: #18120f;
+      color: rgba(255, 255, 255, 0.82);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.7fr 1fr;
+      gap: 36px;
+    }
+    footer h3 { color: #fff; font-size: 1.5rem; margin-bottom: 14px; }
+    footer a:hover { color: var(--gold); }
+    .footer-bottom {
+      margin-top: 38px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.9rem;
+    }
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 60;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #25D366;
+      color: #fff;
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.25);
+      transition: transform 180ms ease;
+    }
+    .whatsapp:hover { transform: translateY(-3px) scale(1.04); }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .section-head, .about-grid, .contact-grid, .product-feature, .footer-grid { grid-template-columns: 1fr; }
+      .service-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid, .testimonial-grid { grid-template-columns: 1fr; }
+      .image-stack, .product-photo { min-height: 360px; }
+    }
+    @media (max-width: 620px) {
+      .container { width: min(100% - 24px, 1180px); }
+      .brand { font-size: 1.02rem; }
+      .brand-mark { width: 36px; height: 36px; }
+      .nav { min-height: 68px; }
+      .nav .btn { display: none; }
+      section { padding: 64px 0; }
+      .service-grid, .why-grid, .promise-list, .counter-grid { grid-template-columns: 1fr; }
+      .hero-content { padding-top: 96px; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodService",
+      "name": "Malnad Kitchen",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#599, Banashree, Ratnamma Madhava Rao Road, Beside Maax Super Speciality Hospital, Durgigudi",
+        "addressLocality": "Shivamogga",
+        "addressRegion": "Karnataka",
+        "postalCode": "577201",
+        "addressCountry": "IN"
+      },
+      "telephone": ["+919036426630", "+919844162317", "+919036062317"],
+      "email": "info.malnadkitchen@gmail.com",
+      "servesCuisine": ["Malnad", "Vegetarian", "South Indian"],
+      "openingHours": "Mo-Su 07:00-21:00"
+    }
+  </script>
 </head>
-<body class="bg-surface text-on-surface font-body-md selection:bg-secondary/20">
-<!-- TopNavBar component implementation -->
-<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/10 transition-all duration-300">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto">
-<a class="flex items-center gap-3" href="#home">
-<img alt="Malnad Kitchen Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiaN6HXdoAzRHVTixRCie4zDKQI6UnUQWlkhpIi5Iz5Yow3M2oItK8lBbHBkjlQMJnRQfv42-rPUojNyj7hvIgBpvagTqgq_nIlxGTN09PQTSvuI_ssaBF-D3SDnnSeyijC2m_DORjgww1-oMguJf5vL4gmxmVZQJthvA1idHHMzPnZ1AQvBxYeJRKUoO4iTjjgxa-YddK-UG6d9f49U6XyvAI65IKc_IZ0aQv1iE2VM5eCgxKNwd-TEMWFNCig2kmC-s7p0Ufu7s"/>
-<span class="font-display-lg text-headline-md font-bold text-primary tracking-tight">MALNAD KITCHEN</span>
-</a>
-<nav class="hidden lg:flex items-center gap-8">
-<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-body-md text-body-md" href="#home">Home</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#about">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#catering">Catering</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#products">Products</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#gallery">Gallery</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#contact">Contact</a>
-</nav>
-<a class="bg-primary text-on-primary px-6 py-2 rounded-xl font-label-md text-label-md hover:scale-95 transition-transform duration-150 shadow-lg shadow-primary/10" href="tel:+919036426630">
-            Inquire Now
-        </a>
-</div>
-</header>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative min-h-[85vh] flex items-center overflow-hidden" id="home">
-<!-- Integrated Shader with updated palette -->
-<div class="absolute inset-0 z-0">
-<canvas class="absolute inset-0 w-full h-full opacity-40" id="shader-canvas-ANIMATION_1"></canvas>
-<script>
-            (function() {
-              const canvas = document.getElementById('shader-canvas-ANIMATION_1');
-              function syncSize() {
-                const w = canvas.clientWidth || 1280;
-                const h = canvas.clientHeight || 720;
-                if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; }
-              }
-              if (typeof ResizeObserver !== 'undefined') { new ResizeObserver(syncSize).observe(canvas); }
-              syncSize();
-              const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-              if (!gl) return;
-              const vs = `attribute vec2 a_position; varying vec2 v_texCoord; void main() { v_texCoord = a_position * 0.5 + 0.5; gl_Position = vec4(a_position, 0.0, 1.0); }`;
-              const fs = `precision highp float; uniform float u_time; varying vec2 v_texCoord;
-                vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
-                float snoise(vec2 v){
-                  const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
-                  vec2 i = floor(v + dot(v, C.yy) ); vec2 x0 = v - i + dot(i, C.xx);
-                  vec2 i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
-                  vec4 x12 = x0.xyxy + C.xxzz; x12.xy -= i1; i = mod(i, 289.0);
-                  vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 )) + i.x + vec3(0.0, i1.x, 1.0 ));
-                  vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
-                  m = m*m; m = m*m; vec3 x = 2.0 * fract(p * C.www) - 1.0; vec3 h = abs(x) - 0.5;
-                  vec3 ox = floor(x + 0.5); vec3 a0 = x - ox; m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
-                  vec3 g; g.x = a0.x * x0.x + h.x * x0.y; g.yz = a0.yz * x12.xz + h.yz * x12.yw; return 130.0 * dot(m, g);
-                }
-                void main() {
-                  vec2 uv = v_texCoord;
-                  float n = snoise(uv * 3.0 + u_time * 0.2);
-                  // Updated palette: deep charcoal, forest green, earthy brown tones
-                  vec3 forestGreen = vec3(0.247, 0.412, 0.0); // Secondary
-                  vec3 earthyBrown = vec3(0.18, 0.08, 0.0);    // Tertiary
-                  vec3 white = vec3(1.0, 1.0, 1.0);
-                  vec3 color = mix(white, forestGreen, clamp(n + 0.5, 0.0, 1.0) * 0.4);
-                  color = mix(color, earthyBrown, clamp(n * 0.5, 0.0, 1.0) * 0.1);
-                  gl_FragColor = vec4(color, 0.12);
-                }`;
-              const cs = (type, src) => { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); return s; };
-              const prog = gl.createProgram(); gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs)); gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(prog); gl.useProgram(prog);
-              const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
-              const pos = gl.getAttribLocation(prog, 'a_position'); gl.enableVertexAttribArray(pos); gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
-              const uTime = gl.getUniformLocation(prog, 'u_time');
-              function render(t) { gl.clear(gl.COLOR_BUFFER_BIT); gl.uniform1f(uTime, t * 0.001); gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4); requestAnimationFrame(render); }
-              render(0);
-            })();
-            </script>
-<div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqBtp6Mt614jDzxfpcwxNoldpvfsptxPTCuYbC9CDB2eJxEclO9PFJPud0C-rEOiBLqBhFkI7BePLNQIEP3j8VE6a-49gPbp96N5N_nvtKrq1A9VR5PqDHY3VpYtcEmRtlzRV2HN-3zDvnUrH8SQyePtROqE37b1XTzElFbjL5xxvrE7ssLub-mmX4P68p1gwRJeQmrCiIcO4d1qykMMsJ2_kUONGkYstMe6UHgtHfyXWmbwdzZT_Rr8LNMFEpX9OfdlgKborRSnQ')"></div>
-</div>
-<div class="relative z-20 px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto py-stack-lg">
-<div class="max-w-2xl space-y-stack-md">
-<span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-label-sm uppercase tracking-widest">Premium Heritage Catering</span>
-<h1 class="font-headline-xl text-headline-xl text-primary leading-tight">
-                    Authentic Taste.<br/>Homely Quality.
-                </h1>
-<p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg">
-                    Bringing the rich heritage of Malnad cuisine to your doorstep. Preserving traditional recipes with the freshness of home cooking for your most cherished moments.
-                </p>
-<div class="flex flex-wrap gap-4 pt-4">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md flex items-center gap-2 hover:bg-primary-container transition-all shadow-xl shadow-primary/20">
-<span class="material-symbols-outlined">restaurant_menu</span>
-                        Book Catering
-                    </button>
-<button class="bg-white border border-secondary text-secondary px-8 py-4 rounded-xl font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container-low transition-all">
-<span class="material-symbols-outlined">shopping_basket</span>
-                        Order Snacks
-                    </button>
-</div>
-</div>
-</div>
-</section>
-<!-- About Us Section -->
-<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="about">
-<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-16 items-center">
-<div class="relative">
-<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10 border border-outline-variant/20">
-<img alt="Chef preparing spice blend" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQtDYZhnI0M840lMAkK5wQqKWn3uCFejgbZFo5yJeCwc1h1Ctsdj-vN6jMeUoEB8wyWm3aP7xtjW-pKjykivKe5cGt00RVKbE4zaMM5yXjFw8GkFycFc_TID4iRrjJY-aup9OgCEMW1S81nCAprRSh4Gb1-Xr0TwrHsdwT5l5vMhZk1a7Imdx542nlZUZ2_baeVZDnmHvKuwGsYyA9iS-vfOm8w2jZ64Y7-37pd2TXrRyHIBQ43V4WcDmpxM95KH-20E7nf2c4O-U"/>
-</div>
-<div class="absolute -bottom-10 -right-10 w-64 h-64 rounded-3xl overflow-hidden shadow-2xl border-8 border-white z-20 hidden lg:block">
-<img alt="Hand selected spices" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjo02E4sxbxPX9o2RlYOfar4B6n92A7ZCBSOqKskN3ROdSqR20ayjHleqNx8A39Tv0quBtjM6-6zWHw88k2G-YSGLAEOB_ZH2RsRHUaYlW6BaOvGoNjotQU-BIid4jIbu--rKfFOz6jWLM9OcLeqod8lvn9r_1ZZkERVlHog5msFHaV6zdJUPhFGvMBjpENxKvdFfapS4mnGapegfaSyBVdE75i-kYA3GOb3BmiDxzvey818Y08DQpDmB-5iFKse24mqp8PcfScMw"/>
-</div>
-</div>
-<div class="space-y-stack-md">
-<h2 class="font-headline-lg text-headline-lg text-primary">Heritage of Taste, Heart of Home</h2>
-<p class="text-body-lg font-body-lg text-on-surface-variant">
-                    At Malnad Kitchen, we believe every meal tells a story. Founded on the principles of traditional Malnad hospitality, our kitchen is a sanctuary where age-old recipes meet modern hygiene standards.
-                </p>
-<div class="grid grid-cols-2 gap-gutter pt-4">
-<div class="flex flex-col gap-2">
-<span class="material-symbols-outlined text-secondary text-3xl">grocery</span>
-<h4 class="font-bold text-primary">Fresh Ingredients</h4>
-<p class="text-body-md text-on-surface-variant">Farm-to-table sourcing for every meal.</p>
-</div>
-<div class="flex flex-col gap-2">
-<span class="material-symbols-outlined text-secondary text-3xl">sanitizer</span>
-<h4 class="font-bold text-primary">Hygienic Preparation</h4>
-<p class="text-body-md text-on-surface-variant">ISO standards in traditional settings.</p>
-</div>
-<div class="flex flex-col gap-2">
-<span class="material-symbols-outlined text-secondary text-3xl">history_edu</span>
-<h4 class="font-bold text-primary">Traditional Recipes</h4>
-<p class="text-body-md text-on-surface-variant">Authentic flavors passed through generations.</p>
-</div>
-<div class="flex flex-col gap-2">
-<span class="material-symbols-outlined text-secondary text-3xl">restaurant</span>
-<h4 class="font-bold text-primary">Custom Menu</h4>
-<p class="text-body-md text-on-surface-variant">Tailored exactly to your preferences.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Catering Services -->
-<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface" id="catering">
-<div class="max-w-container-max mx-auto text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Catering for Every Occasion</h2>
-<div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
-<a class="inline-flex items-center gap-2 mt-8 bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary-container transition-all shadow-xl shadow-primary/20" href="catering-menu.html">
-<span class="material-symbols-outlined">restaurant_menu</span>
-Explore Menu
-</a>
-</div>
-<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Card 1 -->
-<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300">
-<div class="h-64 relative overflow-hidden">
-<img alt="Weddings" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK_mwI2Ps6BDboIjB4vPDoJ6MQu-E57QeXWdhi66fodUE_bROEUMqMHM9uiW2LxZVKdSnec-GT_ZwsXuTWF0UqTvYo5hPV7KqIaIFg2mWKJ5IiNn6-3p_rKRQaloTqsH1sGaTci3kGKXJ6QSoOh6IdOKOhU1bSnRyxmX6IzLiWTTrVD5pKfaYBtzhbf3_YM4sohYeDnQAog5TKbrwTiz4vZwUp231Hzb4JkHhCc6pNonfQ0sP9ulaJIvnHCYqptJeHU9p2NNFMB7I"/>
-</div>
-<div class="p-8 space-y-4">
-<h3 class="font-headline-md text-headline-md text-secondary">Weddings</h3>
-<p class="text-on-surface-variant">Grand celebrations with royal Malnad spreads and impeccable service.</p>
-<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="tel:+919036426630">Enquire Now <span class="material-symbols-outlined">arrow_forward</span></a>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300">
-<div class="h-64 relative overflow-hidden">
-<img alt="Corporate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj5eHSseM9l0ob3DKv6tLvPp25N89s8lu8e8dOimDla09N8R_K4dhT8eaLIWsUgMUatPHir24yOzbBioe4EW1kGiGWMWt4Goo_cwFmRRAeM5V40wKZOFX3CR9bjcBLQUS1Bi830PnJpcOxs_sXy_ZOesP7U6p-WMUTVoxfh5g7USN-8yuY7Jww33Yn_9H-HF6gtrMb06ponmH1P9mDel3l2KC5mynMaAhf6CB_pQeeZKR_5rk-fCmG22RXH1HoasywS7-FSQZvHXs"/>
-</div>
-<div class="p-8 space-y-4">
-<h3 class="font-headline-md text-headline-md text-secondary">Corporate</h3>
-<p class="text-on-surface-variant">Professional, hygienic, and punctual meal solutions for your business events.</p>
-<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="tel:+919036426630">Enquire Now <span class="material-symbols-outlined">arrow_forward</span></a>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300">
-<div class="h-64 relative overflow-hidden">
-<img alt="Housewarming" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5qnimQRQwm3t07DnwIIWWntFF1Uu2ty19-NqsweHLae4ut19Z71xnmUb_nwzualB9kRZ4Du6j6kBhY-jJU1lJ76mF95NaY8sZVC2cuTz_IFMC8_a_N3dgEzvtqs06VIlSUJ9hD5wb7l94wZeQSY8ueVVjkeqIlkz5oXyvW1vYrY7PNlufLXg1t8uQkelMpWNbiwcL1feoftUrPYk-tlR7HBAZUeux9oDmtJ5OIiG1iO6blmHiJr_guJtZK8Vc-Q_48bh2wVX3yDg"/>
-</div>
-<div class="p-8 space-y-4">
-<h3 class="font-headline-md text-headline-md text-secondary">Housewarming</h3>
-<p class="text-on-surface-variant">Intimate gatherings served with love and traditional authenticity.</p>
-<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="tel:+919036426630">Enquire Now <span class="material-symbols-outlined">arrow_forward</span></a>
-</div>
-</div>
-</div>
-</section>
-<!-- Specializations -->
-<section class="py-stack-lg bg-surface-container-low overflow-hidden">
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex justify-between items-end mb-12">
-<div class="max-w-xl">
-<h2 class="font-headline-lg text-headline-lg text-primary">Our Specializations</h2>
-<p class="text-on-surface-variant mt-2">Explore our range of curated menus and regional specialties.</p>
-</div>
-</div>
-<div class="flex overflow-x-auto gap-gutter px-margin-mobile md:px-margin-desktop no-scrollbar pb-10">
-<!-- Item 1 -->
-<div class="flex-shrink-0 w-80 group">
-<div class="h-[450px] relative rounded-[40px] overflow-hidden shadow-xl">
-<img alt="South Indian" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFVr2tPxi_HSqKuDCKrAQGVl8L6-GcjC2xXOPgCUbGZ-xZDb_iOrm6xB8oBJOenBL4CZwdyUyiEhnZj2Zm_hyncE4nz93-FLGh6lob56rW7hwplgmPHTBV1ZSE6_-U1D8hQTkoZJ0N7UlnxiD4nAusXsZ9N8DS19FK6PgCXA_ZYix1URYcM9FmKSUQHgcqflwDCJU7nlFfaJtoJREWkCpk5n4Xl4ljYfqel-n-Qm6Ox6S6KsUbpejXqA0L8YKvvkT5iBcOA7PrVso"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-0 p-8 text-white">
-<p class="text-label-sm font-label-sm text-secondary-container mb-2 uppercase tracking-widest">Heritage</p>
-<h3 class="text-2xl font-bold">South Indian</h3>
-</div>
-</div>
-</div>
-<!-- Item 2 -->
-<div class="flex-shrink-0 w-80 group mt-12">
-<div class="h-[450px] relative rounded-[40px] overflow-hidden shadow-xl">
-<img alt="North Indian" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmu-gQqYtqN5_-trRVfEDafowFuNl6PFePz-FZpYt_sN2grJFgEMf8S_awOBz06zrfbo2G8qKsklYnOWpNdtEM20YG-mgPRJmXiMhxa7WG8yH0x50IibpJ-Oa5UZh1q8uQVn2Q95DyS_TGQFe2idJwCfr_bp1Hf4v8rEO9mb5kx-ZeOWRzMIkkayeKnhFsfU1HjdoK_bdwYk6zaWVRpcX4Y8-kSKhm7lReV8EBZGOe5-QvS1G1Vuo6teVxtWx4dnZ86QD9X8SsRus"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-0 p-8 text-white">
-<p class="text-label-sm font-label-sm text-secondary-container mb-2 uppercase tracking-widest">Spicy</p>
-<h3 class="text-2xl font-bold">North Indian</h3>
-</div>
-</div>
-</div>
-<!-- Item 3 -->
-<div class="flex-shrink-0 w-80 group">
-<div class="h-[450px] relative rounded-[40px] overflow-hidden shadow-xl">
-<img alt="Traditional Sweets" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArvQTi5fllNw1mNZ016a-JDAgKTTvA5bqGvsmtopo3gHd_kJKm8CYAnqvRLoeu8zDBfe2R0uupZ5teEP1hpp5uJojPn2RnPbUNnAjOB-OdMXMy5Kd9vUmE4IBIsWGBatjM8r1pvcW6gMgHwtVqxTIepsXSQ1q4u-2GuZW9x4MZBNNLG72KJkLa6wxRjjk8JPIQk6gP7SiwHtrQPEab7iZUB8D-m9FpR1dIa0nPiWg9p6ex4PtnbtEZC8QCOUGIOUi6MZuc7XWDlAc"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-0 p-8 text-white">
-<p class="text-label-sm font-label-sm text-secondary-container mb-2 uppercase tracking-widest">Festive</p>
-<h3 class="text-2xl font-bold">Traditional Sweets</h3>
-</div>
-</div>
-</div>
-<!-- Item 4 -->
-<div class="flex-shrink-0 w-80 group mt-12">
-<div class="h-[450px] relative rounded-[40px] overflow-hidden shadow-xl">
-<img alt="Signature Snacks" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkef31wIKtxtP6C9QVUoE5MSbeS5vPX1ytymxNbfuiMbwTGhGl2Vq9UWIyybYayMWYrlfF7RgQcfgblYAwgvrx3GpcfAPQGe_hzYs6lyUNVsIweTWFKgG8wrgcJ8_mU1pAXvJfi6UjjAmUoOM86H6zmYbuyoBbueLGLpkE96s2o0_Izf9ZhCZzUSO_pexQCTrj-qEE7-iMqG4mP9llPvFzjqdhVRImkD2DTAoHKFz67_LJmXi21njPgb1NdO3Mmn05E0uB8esgDdw"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-0 p-8 text-white">
-<p class="text-label-sm font-label-sm text-secondary-container mb-2 uppercase tracking-widest">Homemade</p>
-<h3 class="text-2xl font-bold">Signature Snacks</h3>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Homemade Products -->
-<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface" id="products">
-<div class="max-w-container-max mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-6">
-<div class="text-center md:text-left">
-<h2 class="font-headline-lg text-headline-lg text-primary">Malnad Store</h2>
-<p class="text-on-surface-variant">Bring home our signature snacks and masalas.</p>
-</div>
-<a class="bg-secondary text-on-secondary px-8 py-3 rounded-full font-label-md text-label-md hover:bg-secondary/90 transition-all" href="malnad-store.html">Explore More</a>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
-<!-- Product 1 -->
-<div class="group">
-<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-low relative mb-4 border border-outline-variant/10">
-<img alt="Butter Chakli" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArQHB4nDYOVJ9-TNJC1wuHdMAv_ZOfjTNIG-3V191kMlEii7JuKYouRHL0ytV1bW3KR28AiIPkL_U5QICx3ZPDSUpB1B5gWIIqFX2PiXC08caXyqXFGPcQH1BZ01MlNR7RFJloqVtOWv7_bA2nYYuK43IjwFrw8OaGWCOHbNFnebUh6XxfqlznOfIU9icH214WeCcBys1AVwPA0NpXJJSBdVEYKpAoFplmKnOtBoDi7KzW8E32CZa6LUntCpWmYCKzG_GRE4UASeA"/>
-<div class="absolute bottom-4 right-4 bg-secondary text-on-secondary w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</div>
-</div>
-<h4 class="font-bold text-lg text-primary">Butter Chakli (250g)</h4>
-<p class="text-secondary font-bold">₹120</p>
-<button class="w-full mt-4 border border-outline py-2 rounded-xl text-label-md text-primary hover:bg-primary hover:text-white hover:border-primary transition-all">Order Now</button>
-</div>
-<!-- Product 2 -->
-<div class="group">
-<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-low relative mb-4 border border-outline-variant/10">
-<img alt="Rasam Powder" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkfuNVGwjxCydkwUoNf5n5JbnPh7zykNblvsqAcC-HANEPyk_tNahVALDUg0ei0P37c60c_WG-Xnr5d6L2c_vwR74_L41uYpPP5GW-e-0h2SusGmrd-RCarJyWD9raoDX7cfe7WpLz_ENRJYuCvlxLOIeKuECEo-mIaQoUzlwdEsLOSAXzEJv22pUZ1aVJ_BolibRqz-jm5PCVYAVfHoDA_zIZ_7oaXw-4HjatQH5vxs030cLunNe5ZP5Z29V0FJ42EwzzeLuLIJI"/>
-<div class="absolute bottom-4 right-4 bg-secondary text-on-secondary w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</div>
-</div>
-<h4 class="font-bold text-lg text-primary">Special Rasam Powder</h4>
-<p class="text-secondary font-bold">₹180</p>
-<button class="w-full mt-4 border border-outline py-2 rounded-xl text-label-md text-primary hover:bg-primary hover:text-white hover:border-primary transition-all">Order Now</button>
-</div>
-<!-- Product 3 -->
-<div class="group">
-<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-low relative mb-4 border border-outline-variant/10">
-<img alt="Mango Pickle" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD64rchKQYNzU8qwZdXqatLgnPri9zreO35i04xOiSY1TkgN9nRvHCEzi6HUXMX4UwDgLuGXPoV5uMDMB4el2HYP_VRHgxXmGXjZocdCF49jZgjPdDZsvqpYLeTlu6cxpokJlqHwi7EoQhbfhim51lPF85SY1pAYoLAvEF3YsArtXZ1Um80wAueQGGU49xP6inF2n07n8Su0YZYt0Hq9EyAjZFzwkzGq-Fy7Ni53msOQqbY2ZVwNW5WlU0sptQDaBwswn122ovL5Kw"/>
-<div class="absolute bottom-4 right-4 bg-secondary text-on-secondary w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</div>
-</div>
-<h4 class="font-bold text-lg text-primary">Grandma's Mango Pickle</h4>
-<p class="text-secondary font-bold">₹210</p>
-<button class="w-full mt-4 border border-outline py-2 rounded-xl text-label-md text-primary hover:bg-primary hover:text-white hover:border-primary transition-all">Order Now</button>
-</div>
-<!-- Product 4 -->
-<div class="group">
-<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-low relative mb-4 border border-outline-variant/10">
-<img alt="Kodubale" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEfyWmF8KNRDvRl2a5oFxUdeZ-jf0-kWODm0dt0PYdtkey67mz3HBgEvppdzn6I_LyESv_r8KV9JR1KIdZ2cJmlmaf0i5_qzB0m_aAw3isQnjFAw4-HnxYsQAbulpDmZftHOjMfRRz4TxKaptzevgl66JLf8fGcawGhPfu-M4by6J_H7MrBdgQbBo93ZKwd0VPOAOhalZmHFIch99xSzFVxJCU1BbsVIn0upiu74G25KRs2s0gVFZRs0prZ6HCvZE6yCsbl5GrMso"/>
-<div class="absolute bottom-4 right-4 bg-secondary text-on-secondary w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</div>
-</div>
-<h4 class="font-bold text-lg text-primary">Kodubale (Hot &amp; Spicy)</h4>
-<p class="text-secondary font-bold">₹135</p>
-<button class="w-full mt-4 border border-outline py-2 rounded-xl text-label-md text-primary hover:bg-primary hover:text-white hover:border-primary transition-all">Order Now</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Visual Journey -->
-<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="gallery">
-<div class="max-w-container-max mx-auto mb-16 text-center">
-<h2 class="font-headline-lg text-headline-lg text-primary">Visual Journey</h2>
-<p class="text-on-surface-variant">Capturing the essence of Malnad hospitality.</p>
-</div>
-<div class="columns-1 md:columns-3 gap-gutter space-y-gutter max-w-container-max mx-auto">
-<div class="rounded-3xl overflow-hidden shadow-lg border border-white">
-<img alt="Buffet table" class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH36sH9h40zgRa9sh1FNN9Q3GFAGpDwch50A-0jzeCgNLCBWF1Sd7m-ex9fScITosapZ__DeJpgAi7hrNM4ZqvkmmnBOqvSVQRHVJZ8lQCLPHYEU8QffOYpab0UwiJVGoqFm9UMFmSpao01fKY_8wFoSsQAQhrM3PCR9YsA4XpGII0Y3OcR8x38yqgwimIN5NPQf-a49EC-RiC26ezjdy1RD2alOuHmeDh_tcnrJz0uCBCvdQHkJgRH3ra01DHv5D-qxFgCWV2RAg"/>
-</div>
-<div class="rounded-3xl overflow-hidden shadow-lg border border-white">
-<img alt="Payasam dessert" class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9IvbY5UZJvmuXgb0cpEb4_6MPxqnp2BA6LS3wxgJzMHH6HPvcT7Mx2w7p3OPwuX7cnwvBHnIZoqUytqe09yKHvdO6okSXpdpY8uditR2EMA-HDyZCDWTrYR6SgoW5gkYYx8A33clTlXd1T-WerZhXKwQZO0su3PpdwhBv6UPAdgtJGHuzPLdIr6PfUahDcX-0jpwO9BmXo7TpU2DlJTkzEatRZExCkgZjqy2nU6WRdn9GMf9ugbybnLGtI2vN9qDRI_2mai5tQbA"/>
-</div>
-<div class="rounded-3xl overflow-hidden shadow-lg border border-white">
-<img alt="Attention to detail" class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeYCl4wzdeXMZFb1spxyYljz_cB8i2OgZzpVxLK0B5Acgn4Y582sUGrApr3F1tzwg8dDqYqYflaUbYl-hCzQdco9hfKlu7nhN6nul6IkdpB4Kl9UK_ETZGsC2XdLV4b6FVo3lSYVTg7RIGvoApwCrO0AFCO4OhIvFIwh00KpJa_ClEeMu3mLWqm8pH2-R7czq_fr3AGQUhqWNtvW5iG_6NlBoBa5-YdKMgJ4lfQK1xNOU8rr_S9s5uMt9pOkeSavwFUlh3Y8uhIMk"/>
-</div>
-<div class="rounded-3xl overflow-hidden shadow-lg border border-white">
-<img alt="Wedding catering outdoor" class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJn9nh5cSil2WSrhY-uNWbs2dhVCwf9alkddnDGDv-FJ3yCrJTa7d3_O0qxePTjWGDbMFvcIkWynHYOqpS_twTGS4_6aCmDSaeiUBpJA260qbQPctv2MY2xnid2DD6lOeyOrHqzEOhc1_ffuDY7hSnhJ-bEdgWygPL1IJANOT6ALs8DikwhlcqLpU7tfVx97xO2R-UXLWuEwWp1_nusSX9qc7unn9Zg-3gyZxImKr8QlxcJx_h-PThCr6PuHL1YJiPQlu5GXF22dU"/>
-</div>
-<div class="rounded-3xl overflow-hidden shadow-lg border border-white">
-<img alt="Traditional breakfast" class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEpLPWeedgDC9ledqCOd8_a3J5ZDawY8ww7upRMUJtdrnIXPc09FQYlgfaOqpRilsdJx8ejw9Y9G6uyKU-hjT7uR7E1ko65lg7bFsmeyfnvYhY6aIHVjdoKbT9yYHJI6AQJSjXVco0y2vLQ5hCrixLOTEiB8bprJblN4Ghl0hrBpOrZfVptmgUCD0LPWgkCHOtNo-4s6qMzc_tlV4Vfozfwq1wUQH6RipWgAgqcJyhYi3kW-Bn0c0iJlYEPSgF5nHK0BHd-VxXjGo"/>
-</div>
-<div class="rounded-3xl overflow-hidden shadow-lg border border-white">
-<img alt="Premium packaging" class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNkwcrrBAPkdYrTHoCFNhkauZr3_JGLr9ABZV9VKRgGzKVDIsukMRoh2NpQyCeqvWPVNzFH-4orcYGwwWMxegdJAKa4IikOoKnknYDjyrHivPtsKJCBzfrWfmNdvgzqO6dl08gqGH8O9c8oRhMWtdNoxuLyxTt1O-P1yBECqQjTOGjq1fvge2vzzTh2B1riTCV7OEfVIs53NxNjAO97FQKca-KB9JLho4BDnNmSuXaPKNvxRYbjdLzSQwntLtmc9jv1Ut3TwJzC_0"/>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-primary text-on-primary overflow-hidden relative">
-<div class="absolute inset-0 opacity-10 pointer-events-none">
-<div class="absolute -top-24 -left-24 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
-<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary-container rounded-full blur-3xl"></div>
-</div>
-<div class="max-w-container-max mx-auto relative z-10">
-<h2 class="font-headline-lg text-headline-lg text-center mb-16">Happy Customers</h2>
-<div class="grid md:grid-cols-3 gap-gutter">
-<!-- Testimonial 1 -->
-<div class="bg-white/10 backdrop-blur-md p-10 rounded-[32px] border border-white/20">
-<div class="flex text-secondary-container mb-6">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="text-body-lg italic mb-8">"The food at my daughter's wedding was the talk of the town. Authentic flavors that reminded everyone of their grandmother's cooking. Highly professional!"</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary font-bold">RS</div>
-<div>
-<p class="font-bold">Rajesh Sharma</p>
-<p class="text-label-sm opacity-60">Wedding Client</p>
-</div>
-</div>
-</div>
-<!-- Testimonial 2 -->
-<div class="bg-white/10 backdrop-blur-md p-10 rounded-[32px] border border-white/20">
-<div class="flex text-secondary-container mb-6">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="text-body-lg italic mb-8">"We order their masalas regularly. The Sambar powder is just phenomenal. Clean, fresh, and perfectly balanced. Truly homemade quality."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary font-bold">AK</div>
-<div>
-<p class="font-bold">Anitha Kumar</p>
-<p class="text-label-sm opacity-60">Regular Customer</p>
-</div>
-</div>
-</div>
-<!-- Testimonial 3 -->
-<div class="bg-white/10 backdrop-blur-md p-10 rounded-[32px] border border-white/20">
-<div class="flex text-secondary-container mb-6">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="text-body-lg italic mb-8">"The corporate lunch boxes were a hit. Very hygienic and the portions were perfect. Our guests were impressed by the traditional touch."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary font-bold">VP</div>
-<div>
-<p class="font-bold">Vikram Prabhu</p>
-<p class="text-label-sm opacity-60">Corporate Lead</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact & Order -->
-<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface relative" id="contact">
-<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-16">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Get a Custom Quote</h2>
-<p class="text-on-surface-variant mb-12">Fill out the form below or contact us directly for personalized catering packages and orders.</p>
-<div class="space-y-8">
-<div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined">call</span>
-</div>
-<div>
-<h4 class="font-bold text-primary">Call Us</h4>
-<p class="text-on-surface-variant">+91 90364 26630</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined">mail</span>
-</div>
-<div>
-<h4 class="font-bold text-primary">Email</h4>
-<p class="text-on-surface-variant">hello@malnadkitchen.com</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined">location_on</span>
-</div>
-<div>
-<h4 class="font-bold text-primary">Address</h4>
-<p class="text-on-surface-variant">42, Heritage Lane, South Bangalore, Karnataka</p>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-surface-container-lowest p-10 rounded-[40px] shadow-xl border border-outline-variant/10">
-<form class="space-y-6">
-<div class="grid grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="text-label-md font-bold uppercase tracking-wider text-primary">Full Name</label>
-<input class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl focus:ring-2 focus:ring-primary/20 p-4" placeholder="Enter your name" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="text-label-md font-bold uppercase tracking-wider text-primary">Phone</label>
-<input class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl focus:ring-2 focus:ring-primary/20 p-4" placeholder="+91" type="tel"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-label-md font-bold uppercase tracking-wider text-primary">Requirement Type</label>
-<select class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl focus:ring-2 focus:ring-primary/20 p-4">
-<option>Catering for Wedding</option>
-<option>Catering for Party/Small Event</option>
-<option>Corporate Catering</option>
-<option>Order Snacks/Masalas</option>
-<option>Other Enquiry</option>
-</select>
-</div>
-<div class="space-y-2">
-<label class="text-label-md font-bold uppercase tracking-wider text-primary">Message</label>
-<textarea class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl focus:ring-2 focus:ring-primary/20 p-4" placeholder="How can we help you?" rows="4"></textarea>
-</div>
-<button class="w-full bg-primary text-on-primary py-5 rounded-xl font-bold text-lg hover:bg-primary-container transition-all shadow-lg shadow-primary/20">Submit Inquiry</button>
-</form>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer component implementation -->
-<footer class="w-full py-xl px-margin-desktop bg-surface-container-lowest border-t border-outline-variant/10">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-lg max-w-7xl mx-auto">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center gap-3 mb-6">
-<img alt="Malnad Kitchen Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiaN6HXdoAzRHVTixRCie4zDKQI6UnUQWlkhpIi5Iz5Yow3M2oItK8lBbHBkjlQMJnRQfv42-rPUojNyj7hvIgBpvagTqgq_nIlxGTN09PQTSvuI_ssaBF-D3SDnnSeyijC2m_DORjgww1-oMguJf5vL4gmxmVZQJthvA1idHHMzPnZ1AQvBxYeJRKUoO4iTjjgxa-YddK-UG6d9f49U6XyvAI65IKc_IZ0aQv1iE2VM5eCgxKNwd-TEMWFNCig2kmC-s7p0Ufu7s"/>
-<span class="font-display-lg text-headline-md font-bold text-primary tracking-tight">MALNAD KITCHEN</span>
-</div>
-<p class="text-on-surface-variant font-body-md text-body-md mb-6">Preserving heritage through flavors that stay in your heart forever.</p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
-<a class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
-<a class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">favorite</span></a>
-</div>
-</div>
-<div>
-<h4 class="font-bold text-primary font-body-md text-body-md mb-6">Quick Links</h4>
-<ul class="space-y-4 font-body-md text-body-md">
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">About Our Recipes</a></li>
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Catering Menu</a></li>
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Product Catalog</a></li>
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Delivery Info</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-primary font-body-md text-body-md mb-6">Customer Support</h4>
-<ul class="space-y-4 font-body-md text-body-md">
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors underline" href="#">Privacy Policy</a></li>
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors underline" href="#">Terms of Service</a></li>
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors underline" href="#">Catering FAQ</a></li>
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors underline" href="#">Allergens</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-primary font-body-md text-body-md mb-6">Newsletter</h4>
-<p class="text-on-surface-variant font-body-md text-body-md mb-4">Get updates on seasonal items.</p>
-<div class="flex">
-<input class="w-full bg-white border border-outline-variant rounded-l-xl p-3 focus:ring-0 text-on-surface" placeholder="Email" type="email"/>
-<button class="bg-primary text-on-primary px-4 rounded-r-xl hover:bg-primary-container transition-all"><span class="material-symbols-outlined">send</span></button>
-</div>
-</div>
-<div class="col-span-1 md:col-span-4 pt-12 border-t border-outline-variant/10 text-center">
-<p class="text-on-surface-variant font-body-md text-body-md">© 2024 Malnad Kitchen. Authentic Taste. Homely Quality.</p>
-</div>
-</div>
-</footer>
-<!-- Floating WhatsApp Button -->
-<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 group" href="https://wa.me/919036426630" target="_blank">
-<svg fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.898 7.898 0 0 0-2.327-5.607zM7.994 14.52a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
-</svg>
-<span class="absolute right-20 bg-white text-on-surface px-4 py-2 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-sm font-bold">Talk to us!</span>
-</a>
-<script>
-    // Smooth scroll header effect
-    window.addEventListener('scroll', () => {
-        const header = document.querySelector('header');
-        if (window.scrollY > 50) {
-            header.classList.add('py-2', 'shadow-md');
-            header.classList.remove('py-4');
-        } else {
-            header.classList.add('py-4');
-            header.classList.remove('py-2', 'shadow-md');
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Malnad Kitchen home">
+        <span class="brand-mark"><img alt="Malnad Kitchen logo" src="assets/malnad-kitchen-logo.png"></span>
+        <span>Malnad Kitchen</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#promise">Promise</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-gold" href="tel:+919036426630">
+        <span class="material-symbols-outlined" aria-hidden="true">call</span>
+        Inquire Now
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuBqBtp6Mt614jDzxfpcwxNoldpvfsptxPTCuYbC9CDB2eJxEclO9PFJPud0C-rEOiBLqBhFkI7BePLNQIEP3j8VE6a-49gPbp96N5N_nvtKrq1A9VR5PqDHY3VpYtcEmRtlzRV2HN-3zDvnUrH8SQyePtROqE37b1XTzElFbjL5xxvrE7ssLub-mmX4P68p1gwRJeQmrCiIcO4d1qykMMsJ2_kUONGkYstMe6UHgtHfyXWmbwdzZT_Rr8LNMFEpX9OfdlgKborRSnQ">
+          <source src="assets/malnad-logo-animation.webm" type="video/webm">
+          <source src="assets/malnad-logo-animation.mp4" type="video/mp4">
+        </video>
+        <div class="hero-fallback"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow">Shivamogga's Premium Vegetarian Caterer</span>
+        <h1>Malnad Kitchen</h1>
+        <p>Two Decades of Trusted Catering Excellence</p>
+        <div class="kannada">ಎರಡು ದಶಕಗಳ ಅನುಭವ • ನಂಬಿಕೆಯ ಸೇವೆ • ಸ್ವಾಭಾವಿಕ ರುಚಿ</div>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="tel:+919036426630">
+            <span class="material-symbols-outlined" aria-hidden="true">restaurant_menu</span>
+            Book Catering
+          </a>
+          <a class="btn btn-outline" href="#services">
+            <span class="material-symbols-outlined" aria-hidden="true">explore</span>
+            Explore Our Services
+          </a>
+        </div>
+        <div class="trusted"><span class="stars">★★★★★</span> Trusted by thousands of customers since 2005.</div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <span class="eyebrow">About Us</span>
+          <h3>Pioneers in wholesome food service from Shivamogga.</h3>
+          <p>Malnad Kitchen is a pioneer in offering a wide variety of food services from Shivamogga. Founded by Mr. Krishnamurthy and Mrs. Mamata Krishnamurthy, the company started more than 20 years ago with a vision of serving mankind through wholesome food.</p>
+          <p>Today, we serve industries, schools, institutions, weddings and events with high-quality vegetarian cuisine. Our philosophy is built on Taste, Quality, Health and Service.</p>
+          <p>We specialize in authentic Malnad cuisine while also offering other vegetarian cuisines. We also manufacture authentic masala powders and instant mixes that are popular in India and exported to several countries.</p>
+          <div class="counter-grid" aria-label="Malnad Kitchen highlights">
+            <div class="counter"><strong data-count="20">0</strong><span>Years Experience</span></div>
+            <div class="counter"><strong data-count="100">0</strong><span>Vegetarian Food</span></div>
+            <div class="counter"><strong data-count="1000">0</strong><span>Customers Served</span></div>
+          </div>
+        </div>
+        <div class="image-stack">
+                    <img alt="Animated Malnad Kitchen cooking illustration" src="assets/about-malnad-kitchen-transparent.gif" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Our Services</span>
+            <h3>Built for celebrations, institutions and everyday taste.</h3>
+          </div>
+          <p>From large-scale vegetarian catering to signature retail products, every service is shaped by authentic recipes, reliable delivery and consistent quality.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon"><span class="material-symbols-outlined">celebration</span></div>
+            <h3>Event Catering</h3>
+            <p>Vegetarian menus for weddings, anniversaries, birthdays, farewells and private events.</p>
+            <p><a class="btn btn-light" href="catering-menu.html">Explore Menu</a></p>
+          </article>
+          <article class="service-card">
+            <div class="icon"><span class="material-symbols-outlined">factory</span></div>
+            <h3>Industrial Catering</h3>
+            <p>Timely, hygienic and scalable meal service for industries, schools and institutions.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon"><span class="material-symbols-outlined">local_dining</span></div>
+            <h3>Masala Powders</h3>
+            <p>Authentic spice blends prepared from traditional recipes for everyday cooking.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon"><span class="material-symbols-outlined">inventory_2</span></div>
+            <h3>Instant Mixes</h3>
+            <p>Convenient, reliable mixes that carry the warmth and depth of Malnad food.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Why Choose Us</span>
+            <h3>Food you can trust, at any scale.</h3>
+          </div>
+          <p>Our standards are simple and non-negotiable: authentic vegetarian cooking, clean preparation and dependable service.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-item"><h3>20+ Years</h3><p>Two decades of catering experience.</p></div>
+          <div class="why-item"><h3>100% Vegetarian</h3><p>High-quality vegetarian cuisine for every occasion.</p></div>
+          <div class="why-item"><h3>Hygienic Kitchen</h3><p>Clean processes for institutional and event service.</p></div>
+          <div class="why-item"><h3>Timely Delivery</h3><p>Planned, punctual delivery for smooth events.</p></div>
+          <div class="why-item"><h3>No Food Colours</h3><p>No artificial colours in our food.</p></div>
+          <div class="why-item"><h3>No MSG</h3><p>No tasting powder or shortcuts.</p></div>
+          <div class="why-item"><h3>No Baking Soda</h3><p>Natural preparation and traditional methods.</p></div>
+          <div class="why-item"><h3>Malnad Recipes</h3><p>Authentic taste rooted in local food heritage.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise" id="promise">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Special Promise</span>
+            <h3>Fresh ingredients. Traditional recipes. Honest food.</h3>
+          </div>
+          <p>Every dish is prepared without food colours, tasting powder (MSG) or baking soda. Our promise is healthy food with authentic taste and the comfort of trusted service.</p>
+        </div>
+        <div class="promise-list">
+          <div>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m5 13 4 4L19 7"></path>
+              <path d="M12 3a9 9 0 1 0 9 9"></path>
+            </svg>
+            <span>No Artificial Food Colours</span>
+          </div>
+          <div>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 2v6.5L4.4 18.2A2.6 2.6 0 0 0 6.6 22h10.8a2.6 2.6 0 0 0 2.2-3.8L14 8.5V2"></path>
+              <path d="M8 2h8"></path>
+              <path d="M7.3 16h9.4"></path>
+            </svg>
+            <span>No Tasting Powder (MSG)</span>
+          </div>
+          <div>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 11h16"></path>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              <path d="M6 11l1.2 8.2A2 2 0 0 0 9.2 21h5.6a2 2 0 0 0 2-1.8L18 11"></path>
+              <path d="M10 15h4"></path>
+            </svg>
+            <span>No Baking Soda</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container product-feature">
+        <div class="product-photo" role="img" aria-label="Malnad masala powders and instant mixes"></div>
+        <div class="product-panel">
+          <span class="eyebrow">Export Products</span>
+          <h3>Masala powders and instant mixes loved beyond Karnataka.</h3>
+          <p>Our authentic masala powders and instant mixes are popular in India and exported to several countries. Bring home clean, traditional flavor made for modern kitchens.</p>
+          <div class="pill-list">
+            <span class="pill">Rasam Powder</span>
+            <span class="pill">Bisi Bele Bath Powder</span>
+            <span class="pill">Avial Masala</span>
+            <span class="pill">Instant Mixes</span>
+            <span class="pill">Pickles</span>
+            <span class="pill">Snacks</span>
+          </div>
+          <a class="btn btn-primary" href="malnad-store.html">
+            <span class="material-symbols-outlined" aria-hidden="true">shopping_bag</span>
+            View Products
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Gallery</span>
+            <h3>Moments from the Malnad Kitchen table.</h3>
+          </div>
+          <p>Wedding catering, industrial catering, traditional meals, our kitchen, serving team, masala products and instant mixes.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCK_mwI2Ps6BDboIjB4vPDoJ6MQu-E57QeXWdhi66fodUE_bROEUMqMHM9uiW2LxZVKdSnec-GT_ZwsXuTWF0UqTvYo5hPV7KqIaIFg2mWKJ5IiNn6-3p_rKRQaloTqsH1sGaTci3kGKXJ6QSoOh6IdOKOhU1bSnRyxmX6IzLiWTTrVD5pKfaYBtzhbf3_YM4sohYeDnQAog5TKbrwTiz4vZwUp231Hzb4JkHhCc6pNonfQ0sP9ulaJIvnHCYqptJeHU9p2NNFMB7I')">Wedding Catering</div>
+          <div class="gallery-item" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBj5eHSseM9l0ob3DKv6tLvPp25N89s8lu8e8dOimDla09N8R_K4dhT8eaLIWsUgMUatPHir24yOzbBioe4EW1kGiGWMWt4Goo_cwFmRRAeM5V40wKZOFX3CR9bjcBLQUS1Bi830PnJpcOxs_sXy_ZOesP7U6p-WMUTVoxfh5g7USN-8yuY7Jww33Yn_9H-HF6gtrMb06ponmH1P9mDel3l2KC5mynMaAhf6CB_pQeeZKR_5rk-fCmG22RXH1HoasywS7-FSQZvHXs')">Industrial Catering</div>
+          <div class="gallery-item" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEpLPWeedgDC9ledqCOd8_a3J5ZDawY8ww7upRMUJtdrnIXPc09FQYlgfaOqpRilsdJx8ejw9Y9G6uyKU-hjT7uR7E1ko65lg7bFsmeyfnvYhY6aIHVjdoKbT9yYHJI6AQJSjXVco0y2vLQ5hCrixLOTEiB8bprJblN4Ghl0hrBpOrZfVptmgUCD0LPWgkCHOtNo-4s6qMzc_tlV4Vfozfwq1wUQH6RipWgAgqcJyhYi3kW-Bn0c0iJlYEPSgF5nHK0BHd-VxXjGo')">Traditional Meals</div>
+          <div class="gallery-item" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQtDYZhnI0M840lMAkK5wQqKWn3uCFejgbZFo5yJeCwc1h1Ctsdj-vN6jMeUoEB8wyWm3aP7xtjW-pKjykivKe5cGt00RVKbE4zaMM5yXjFw8GkFycFc_TID4iRrjJY-aup9OgCEMW1S81nCAprRSh4Gb1-Xr0TwrHsdwT5l5vMhZk1a7Imdx542nlZUZ2_baeVZDnmHvKuwGsYyA9iS-vfOm8w2jZ64Y7-37pd2TXrRyHIBQ43V4WcDmpxM95KH-20E7nf2c4O-U')">Kitchen</div>
+          <div class="gallery-item" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAH36sH9h40zgRa9sh1FNN9Q3GFAGpDwch50A-0jzeCgNLCBWF1Sd7m-ex9fScITosapZ__DeJpgAi7hrNM4ZqvkmmnBOqvSVQRHVJZ8lQCLPHYEU8QffOYpab0UwiJVGoqFm9UMFmSpao01fKY_8wFoSsQAQhrM3PCR9YsA4XpGII0Y3OcR8x38yqgwimIN5NPQf-a49EC-RiC26ezjdy1RD2alOuHmeDh_tcnrJz0uCBCvdQHkJgRH3ra01DHv5D-qxFgCWV2RAg')">Serving Team</div>
+          <div class="gallery-item" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDa3N2J4RA2i1_CmmF0bJiN9YpN0b7pGNgt0G5KvUPRUsnGCXiSEs7tEOyEVuP4dOMZ1T_EZSEbchoUIiU4nl-8sIPwFmBdB0RXWdS7xwgilISzaMFDhPXJiyUTKMLpL7PYzjhrC2BY15yJFQgznpc0Kv6rkTpPrtHXWboh_5-0oDrhgX09sYK0X8PNxspBxDmY4EoxjnP_kACeQNYWuyQVtpi0PM9snqpgNqgImoEjx8v2i13ihbPU9VpmepwwoPliTA_SbTmVQp4')">Masala Products</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Testimonials</span>
+            <h3>Customers trust us for taste and service.</h3>
+          </div>
+          <p>Five-star feedback from families, institutions and regular product customers.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial"><span class="stars">★★★★★</span><p>"Authentic vegetarian food, beautifully served and delivered on time. Our family event felt effortless."</p><strong>Wedding Client</strong></article>
+          <article class="testimonial"><span class="stars">★★★★★</span><p>"Reliable industrial catering with clean food and consistent taste. The team understands scale."</p><strong>Institution Partner</strong></article>
+          <article class="testimonial"><span class="stars">★★★★★</span><p>"Their masala powders have a genuine homemade aroma. We keep coming back for the quality."</p><strong>Store Customer</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <span class="eyebrow">Contact</span>
+          <h3>Address</h3>
+          <div class="contact-list">
+            <div><span class="material-symbols-outlined">location_on</span><p><strong>Address</strong>Malnad Kitchen<br>#599, "Banashree"<br>Ratnamma Madhava Rao Road<br>Beside Maax Super Speciality Hospital<br>Durgigudi, Shivamogga, Karnataka - 577201</p></div>
+            <a href="mailto:info.malnadkitchen@gmail.com"><span class="material-symbols-outlined">mail</span><p><strong>Email</strong>info.malnadkitchen@gmail.com</p></a>
+            <a href="tel:+919036426630"><span class="material-symbols-outlined">call</span><p><strong>Phone</strong>9036426630 / 9844162317 / 9036062317</p></a>
+            <div><span class="material-symbols-outlined">schedule</span><p><strong>Business Hours</strong>Monday-Sunday, 7:00 AM - 9:00 PM</p></div>
+          </div>
+        </div>
+        <div class="map-card">
+          <h3>Map</h3>
+          <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to Malnad Kitchen, Shivamogga" src="https://www.google.com/maps?q=Malnad%20Kitchen%20%23599%20Banashree%20Ratnamma%20Madhava%20Rao%20Road%20Durgigudi%20Shivamogga%20577201&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Malnad Kitchen</h3>
+          <p class="kannada">ಎರಡು ದಶಕಗಳ ಅನುಭವ • ನಂಬಿಕೆಯ ಸೇವೆ • ಸ್ವಾಭಾವಿಕ ರುಚಿ</p>
+          <p style="margin-top:14px;">Premium vegetarian catering, masala powders and instant mixes from Shivamogga.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <p><a href="#about">About</a></p>
+          <p><a href="#services">Services</a></p>
+          <p><a href="catering-menu.html">Catering Menu</a></p>
+          <p><a href="malnad-store.html">Products</a></p>
+        </div>
+        <div>
+          <h3>Reach Us</h3>
+          <p>#599, "Banashree", Ratnamma Madhava Rao Road, Durgigudi, Shivamogga - 577201</p>
+          <p style="margin-top:12px;"><a href="tel:+919036426630">9036426630</a> / <a href="tel:+919844162317">9844162317</a> / <a href="tel:+919036062317">9036062317</a></p>
+          <p><a href="mailto:info.malnadkitchen@gmail.com">info.malnadkitchen@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Malnad Kitchen. Taste. Quality. Health. Service.</div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/919036426630" target="_blank" rel="noopener" aria-label="Chat with Malnad Kitchen on WhatsApp">
+    <svg aria-hidden="true" fill="currentColor" height="30" viewBox="0 0 16 16" width="30" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.898 7.898 0 0 0-2.327-5.607zM7.994 14.52a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+    </svg>
+  </a>
+
+  <script>
+    const header = document.getElementById("site-header");
+    const updateHeader = () => header.classList.toggle("scrolled", window.scrollY > 24);
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+
+    const counters = document.querySelectorAll("[data-count]");
+    const animateCounter = (el) => {
+      const target = Number(el.dataset.count);
+      const suffix = target === 100 ? "%" : "+";
+      const duration = 1200;
+      const start = performance.now();
+      const step = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        el.textContent = Math.floor(target * progress) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !entry.target.dataset.done) {
+          entry.target.dataset.done = "true";
+          animateCounter(entry.target);
         }
-    });
-    
-    // Navigation active state
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav a');
-    
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            if (window.pageYOffset >= sectionTop - 150) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('text-secondary', 'font-bold', 'border-b-2', 'border-secondary', 'pb-1');
-            link.classList.add('text-on-surface-variant');
-            if (link.getAttribute('href').substring(1) === current) {
-                link.classList.add('text-secondary', 'font-bold', 'border-b-2', 'border-secondary', 'pb-1');
-                link.classList.remove('text-on-surface-variant');
-            }
-        });
-    });
-</script>
-</body></html>
+      });
+    }, { threshold: 0.5 });
+    counters.forEach((counter) => observer.observe(counter));
+  </script>
+</body>
+</html>
