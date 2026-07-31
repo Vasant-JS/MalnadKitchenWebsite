@@ -269,6 +269,12 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 18px;
     }
+    
+    .service-grid-2, .why-grid-2, .gallery-grid-2, .testimonial-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
     .service-card, .why-item, .testimonial, .product-panel {
       border: 1px solid var(--line);
       background: #fff;
@@ -292,6 +298,48 @@
       margin: 4px 0 12px;
     }
     .service-card p, .why-item p, .testimonial p { color: var(--muted); }
+
+    .event-strip {
+      background: var(--cream);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .event-strip .section-head { margin-bottom: 28px; }
+    .event-strip h2 { max-width: 860px; }
+    .event-marquee {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    }
+    .event-track {
+      display: flex;
+      flex: 0 0 auto;
+      gap: 14px;
+      min-width: max-content;
+      padding: 4px 14px 4px 0;
+      animation: eventScroll 28s linear infinite;
+    }
+    .event-marquee:hover .event-track { animation-play-state: paused; }
+    .event-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 56px;
+      padding: 0 24px;
+      border: 1px solid rgba(93, 64, 55, 0.18);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--forest-dark);
+      font-weight: 800;
+      box-shadow: 0 12px 30px rgba(32, 27, 23, 0.07);
+      white-space: nowrap;
+    }
+    @keyframes eventScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
+    }
 
     .promise {
       background: var(--forest-dark);
@@ -477,6 +525,10 @@
       .service-grid, .why-grid, .promise-list, .counter-grid { grid-template-columns: 1fr; }
       .hero-content { padding-top: 96px; }
     }
+    @media (prefers-reduced-motion: reduce) {
+      .event-track { animation: none; }
+      .event-marquee { overflow-x: auto; mask-image: none; }
+    }
   </style>
   <script type="application/ld+json">
     {
@@ -559,8 +611,8 @@
           <p>We specialize in authentic Malnad cuisine while also offering other vegetarian cuisines. We also manufacture authentic masala powders and instant mixes that are popular in India and exported to several countries.</p>
           <div class="counter-grid" aria-label="Malnad Kitchen highlights">
             <div class="counter"><strong data-count="20">0</strong><span>Years Experience</span></div>
-            <div class="counter"><strong data-count="100">0</strong><span>Vegetarian Food</span></div>
-            <div class="counter"><strong data-count="1000">0</strong><span>Customers Served</span></div>
+            <div class="counter"><strong data-count="200">0</strong><span>Vegetarian Food</span></div>
+            <div class="counter"><strong data-count="10000">0</strong><span>Customers Served</span></div>
           </div>
         </div>
         <div class="image-stack">
@@ -578,7 +630,7 @@
           </div>
           <p>From large-scale vegetarian catering to signature retail products, every service is shaped by authentic recipes, reliable delivery and consistent quality.</p>
         </div>
-        <div class="service-grid">
+        <div class="service-grid-2">
           <article class="service-card">
             <div class="icon"><span class="material-symbols-outlined">celebration</span></div>
             <h3>Event Catering</h3>
@@ -589,16 +641,6 @@
             <div class="icon"><span class="material-symbols-outlined">factory</span></div>
             <h3>Industrial Catering</h3>
             <p>Timely, hygienic and scalable meal service for industries, schools and institutions.</p>
-          </article>
-          <article class="service-card">
-            <div class="icon"><span class="material-symbols-outlined">local_dining</span></div>
-            <h3>Masala Powders</h3>
-            <p>Authentic spice blends prepared from traditional recipes for everyday cooking.</p>
-          </article>
-          <article class="service-card">
-            <div class="icon"><span class="material-symbols-outlined">inventory_2</span></div>
-            <h3>Instant Mixes</h3>
-            <p>Convenient, reliable mixes that carry the warmth and depth of Malnad food.</p>
           </article>
         </div>
       </div>
@@ -618,10 +660,43 @@
           <div class="why-item"><h3>100% Vegetarian</h3><p>High-quality vegetarian cuisine for every occasion.</p></div>
           <div class="why-item"><h3>Hygienic Kitchen</h3><p>Clean processes for institutional and event service.</p></div>
           <div class="why-item"><h3>Timely Delivery</h3><p>Planned, punctual delivery for smooth events.</p></div>
-          <div class="why-item"><h3>No Food Colours</h3><p>No artificial colours in our food.</p></div>
-          <div class="why-item"><h3>No MSG</h3><p>No tasting powder or shortcuts.</p></div>
-          <div class="why-item"><h3>No Baking Soda</h3><p>Natural preparation and traditional methods.</p></div>
-          <div class="why-item"><h3>Malnad Recipes</h3><p>Authentic taste rooted in local food heritage.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event-strip" id="events">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Events We Cater</span>
+            <h2>Menus for every family celebration and professional gathering.</h2>
+          </div>
+        </div>
+        <div class="event-marquee" aria-label="Events catered by Malnad Kitchen">
+          <div class="event-track">
+            <span class="event-chip">Wedding</span>
+            <span class="event-chip">Anniversary</span>
+            <span class="event-chip">Engagement</span>
+            <span class="event-chip">Seemantham</span>
+            <span class="event-chip">Annaprasana</span>
+            <span class="event-chip">Birthday</span>
+            <span class="event-chip">House warming</span>
+            <span class="event-chip">Mehndi</span>
+            <span class="event-chip">Corporate</span>
+            <span class="event-chip">Retirement</span>
+          </div>
+          <div class="event-track" aria-hidden="true">
+            <span class="event-chip">Wedding</span>
+            <span class="event-chip">Anniversary</span>
+            <span class="event-chip">Engagement</span>
+            <span class="event-chip">Seemantham</span>
+            <span class="event-chip">Annaprasana</span>
+            <span class="event-chip">Birthday</span>
+            <span class="event-chip">House warming</span>
+            <span class="event-chip">Mehndi</span>
+            <span class="event-chip">Corporate</span>
+            <span class="event-chip">Retirement</span>
+          </div>
         </div>
       </div>
     </section>
